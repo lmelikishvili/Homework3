@@ -18,11 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         findViewById<AppCompatButton>(R.id.btnSave).setOnClickListener(){
-            if (emailCheck()){
-                save()
-            }else{
-                findViewById<AppCompatEditText>(R.id.email).error = "Invalid Format"
-            }
+            save()
         }
 
         findViewById<AppCompatButton>(R.id.btnClear).setOnLongClickListener {
@@ -38,6 +34,10 @@ class MainActivity : AppCompatActivity() {
         if(TextUtils.isEmpty(findViewById<AppCompatEditText>(R.id.email).text.toString())){
             findViewById<AppCompatEditText>(R.id.email).error = "Field Is Empty"
         }
+        else if (!emailCheck()){
+            findViewById<AppCompatEditText>(R.id.email).error = "Invalid Format"
+        }
+
 
         //userName Filed
         if(TextUtils.isEmpty(findViewById<AppCompatEditText>(R.id.userName).text.toString())){

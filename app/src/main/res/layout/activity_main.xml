@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
-
-
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -19,7 +15,6 @@
         app:titleTextColor="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-
 
 
     <EditText
@@ -56,6 +51,7 @@
         android:layout_width="match_parent"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
         android:layout_height="wrap_content"/>
 
     <EditText
@@ -68,6 +64,7 @@
         android:layout_width="match_parent"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
         android:layout_height="wrap_content"/>
 
     <EditText
@@ -81,8 +78,6 @@
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:layout_height="wrap_content"/>
-
-
 
 
     <androidx.appcompat.widget.AppCompatButton

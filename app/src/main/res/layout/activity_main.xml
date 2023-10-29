@@ -12,6 +12,7 @@
         app:title="Profile Info"
         android:background="@color/blue"
         android:layout_width="match_parent"
+        app:titleTextColor="@color/white"
         android:layout_height="wrap_content"/>
 
     <EditText
@@ -76,9 +77,10 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_gravity="bottom"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
+        android:textColor="@color/white"
         android:background="@drawable/rounded_corner"
         android:text="Clear" />
 
@@ -90,6 +92,7 @@
         android:layout_gravity="bottom"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
+        android:textColor="@color/white"
         android:background="@drawable/rounded_corner"
         android:text="Save" />
 
